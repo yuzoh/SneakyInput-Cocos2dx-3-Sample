@@ -12,6 +12,12 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		3396FFF51ACBF1D800281E71 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3396FFEB1ACBF1D800281E71 /* .gitignore */; };
+		3396FFF61ACBF1D800281E71 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3396FFEC1ACBF1D800281E71 /* README.md */; };
+		3396FFF71ACBF1D800281E71 /* SneakyButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3396FFED1ACBF1D800281E71 /* SneakyButton.cpp */; };
+		3396FFF81ACBF1D800281E71 /* SneakyButtonSkinnedBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3396FFEF1ACBF1D800281E71 /* SneakyButtonSkinnedBase.cpp */; };
+		3396FFF91ACBF1D800281E71 /* SneakyJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3396FFF11ACBF1D800281E71 /* SneakyJoystick.cpp */; };
+		3396FFFA1ACBF1D800281E71 /* SneakyJoystickSkinnedBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3396FFF31ACBF1D800281E71 /* SneakyJoystickSkinnedBase.cpp */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 46880B7619C43A67006E1F66 /* CloseNormal.png */; };
@@ -106,6 +112,16 @@
 		1D6058910D05DD3D006BFB54 /* SneakyInput_Sample iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SneakyInput_Sample iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3396FFEB1ACBF1D800281E71 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3396FFEC1ACBF1D800281E71 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3396FFED1ACBF1D800281E71 /* SneakyButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SneakyButton.cpp; sourceTree = "<group>"; };
+		3396FFEE1ACBF1D800281E71 /* SneakyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButton.h; sourceTree = "<group>"; };
+		3396FFEF1ACBF1D800281E71 /* SneakyButtonSkinnedBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SneakyButtonSkinnedBase.cpp; sourceTree = "<group>"; };
+		3396FFF01ACBF1D800281E71 /* SneakyButtonSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyButtonSkinnedBase.h; sourceTree = "<group>"; };
+		3396FFF11ACBF1D800281E71 /* SneakyJoystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SneakyJoystick.cpp; sourceTree = "<group>"; };
+		3396FFF21ACBF1D800281E71 /* SneakyJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystick.h; sourceTree = "<group>"; };
+		3396FFF31ACBF1D800281E71 /* SneakyJoystickSkinnedBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SneakyJoystickSkinnedBase.cpp; sourceTree = "<group>"; };
+		3396FFF41ACBF1D800281E71 /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B7619C43A67006E1F66 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseNormal.png; sourceTree = "<group>"; };
 		46880B7719C43A67006E1F66 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
@@ -269,6 +285,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3396FFEA1ACBF1D800281E71 /* SneakyInput */ = {
+			isa = PBXGroup;
+			children = (
+				3396FFEB1ACBF1D800281E71 /* .gitignore */,
+				3396FFEC1ACBF1D800281E71 /* README.md */,
+				3396FFED1ACBF1D800281E71 /* SneakyButton.cpp */,
+				3396FFEE1ACBF1D800281E71 /* SneakyButton.h */,
+				3396FFEF1ACBF1D800281E71 /* SneakyButtonSkinnedBase.cpp */,
+				3396FFF01ACBF1D800281E71 /* SneakyButtonSkinnedBase.h */,
+				3396FFF11ACBF1D800281E71 /* SneakyJoystick.cpp */,
+				3396FFF21ACBF1D800281E71 /* SneakyJoystick.h */,
+				3396FFF31ACBF1D800281E71 /* SneakyJoystickSkinnedBase.cpp */,
+				3396FFF41ACBF1D800281E71 /* SneakyJoystickSkinnedBase.h */,
+			);
+			path = SneakyInput;
+			sourceTree = "<group>";
+		};
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +318,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3396FFEA1ACBF1D800281E71 /* SneakyInput */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
@@ -457,6 +491,7 @@
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				3396FFF51ACBF1D800281E71 /* .gitignore in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
@@ -487,10 +522,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3396FFF61ACBF1D800281E71 /* README.md in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				3396FFF81ACBF1D800281E71 /* SneakyButtonSkinnedBase.cpp in Sources */,
+				3396FFF71ACBF1D800281E71 /* SneakyButton.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				3396FFF91ACBF1D800281E71 /* SneakyJoystick.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				3396FFFA1ACBF1D800281E71 /* SneakyJoystickSkinnedBase.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

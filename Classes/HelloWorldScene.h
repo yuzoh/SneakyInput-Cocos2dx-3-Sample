@@ -2,9 +2,20 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "SneakyJoystick.h"
+#include "SneakyJoystickSkinnedBase.h"
 
 class HelloWorld : public cocos2d::Layer
 {
+private:
+    SneakyJoystick * mJoystick;
+    SneakyJoystickSkinnedBase * mSkinjoystick;
+    
+    cocos2d::Sprite * mSprite;
+    cocos2d::Label * mLabel;
+    
+    void update(float delta);
+    
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();

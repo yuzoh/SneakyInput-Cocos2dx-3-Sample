@@ -54,27 +54,49 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
+    mLabel = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
     
     // position the label on the center of the screen
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
+    mLabel->setPosition(Vec2(origin.x + visibleSize.width/2,
+                             origin.y + visibleSize.height - mLabel->getContentSize().height));
 
     // add the label as a child to this layer
-    this->addChild(label, 1);
+    this->addChild(mLabel, 1);
 
     // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
+    mSprite = Sprite::create("HelloWorld.png");
 
     // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    mSprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
     // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
+    this->addChild(mSprite, 0);
+    
+    
+    mJoystick = new SneakyJoystick();
+    mJoystick->initWithRect(Rect( 0, 0, 75.0f, 75.0f));
+    mJoystick->autorelease();
+    mJoystick->setAutoCenter(true);
+    mJoystick->setHasDeadzone(true);
+    mJoystick->setDeadRadius(20.0f);
+    
+    mSkinjoystick = SneakyJoystickSkinnedBase::create();
+    mSkinjoystick->setBackgroundSprite(CCSprite::create("joystick1.png"));
+    mSkinjoystick->setThumbSprite(CCSprite::create("joystick2.png"));
+    mSkinjoystick->setJoystick(mJoystick);
+    mSkinjoystick->setPosition(Vec2( visibleSize.width / 2 , visibleSize.height / 5));
+    
+    this->addChild(mSkinjoystick,10);
+    this->scheduleUpdate();
     
     return true;
 }
 
+void HelloWorld::update(float delta){
+    Vec2 pos = mSprite->getPosition();
+    pos.add(mJoystick->getVelocity());
+    mSprite->setPosition(pos);
+}
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
